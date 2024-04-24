@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf9f0;
+  background-size: cover;
+}
+@font-face {
+  font-family: SpartanMedium;
+  src: url(./spartan-cufonfonts/Spartan-Medium.ttf);
+}
+@font-face {
+  font-family: SpartanSB;
+  src: url(./spartan-cufonfonts/Spartan-SemiBold.ttf);
+}
+@font-face {
+  font-family: SpartanLight;
+  src: url(./spartan-cufonfonts/Spartan-Light.ttf);
+}
+.icon {
+  margin-left: 72%;
+  margin-top: 0%;
+}
+.main {
+  position: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 90%;
+  display: grid;
+  padding-left: 10%;
+  grid-template-columns: repeat(auto-fill);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+img {
+  width: 540px;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+  padding-left: 5%;
+}

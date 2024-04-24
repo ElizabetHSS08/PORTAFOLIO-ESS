@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf9f0;
+  background-size: cover;
+}
+@font-face {
+  font-family: SpartanMedium;
+  src: url(./spartan-cufonfonts/Spartan-Medium.ttf);
+}
+@font-face {
+  font-family: SpartanSB;
+  src: url(./spartan-cufonfonts/Spartan-SemiBold.ttf);
+}
+@font-face {
+  font-family: SpartanLight;
+  src: url(./spartan-cufonfonts/Spartan-Light.ttf);
+}
+.icon {
+  margin-left: 72%;
+  margin-top: 0%;
+}
+.main {
+  position: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  width: 90%;
+  display: grid;
+  padding-left: 13%;
+  grid-template-columns: repeat(auto-fill);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+img {
+  width: 270px;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+  padding-left: 2%;
+}
+.info {
+  font-family: SpartanLight;
+  font-size: 10pt;
+  line-height: 20pt;
+  color: #bb221d;
+  position: left;
+  text-align: left;
+  padding-top: -20%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 60%;
+  border-width: 0;
+}
+.Info {
+  font-family: SpartanSB;
+  font-size: 10pt;
+  color: #bb221d;
+  padding: 0px;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-width: 0;
+}
+.x {
+  font-family: SpartanSB;
+  font-size: 5pt;
+  color: #bb221d;
+  padding: 2px;
+  border-width: 0;
+}
+::backdrop {
+  opacity: 10%;
+}
