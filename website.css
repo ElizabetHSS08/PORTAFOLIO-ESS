@@ -44,12 +44,3 @@ ul li a {
   padding-bottom: 10px;
   border-bottom: 1.5px solid #bb221d;
 }
-.column {
-  width: 100%;
-}
-
-@media (min-width: 600px) {
-  .column {
-    width: 50%;
-  }
-}
