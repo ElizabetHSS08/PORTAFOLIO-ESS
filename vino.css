@@ -17,7 +17,7 @@
   src: url(./spartan-cufonfonts/Spartan-Light.ttf);
 }
 .icon {
-  margin-left: 72%;
+  margin-left: 63%;
   margin-top: 0%;
 }
 .main {
@@ -33,11 +33,11 @@
   row-gap: 10px;
 }
 img {
-  width: 540px;
+  width: 800px;
   object-fit: cover;
   object-position: center;
-  padding: 5px;
-  padding-left: 2%;
+  padding: 1px;
+  padding-left: 20%;
 }
 .info {
   font-family: SpartanLight;

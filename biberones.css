@@ -33,10 +33,10 @@
   row-gap: 10px;
 }
 img {
-  width: 270px;
+  width: 600px;
   object-fit: cover;
   object-position: center;
-  padding: 5px;
+  padding: 2px;
   padding-left: 2%;
 }
 .info {
