@@ -22,6 +22,27 @@
         />
       </a>
       </div>
+        <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>Se diseñó el logotipo para una empresa de servicios de sastrería especializada en trajes masculinos a medida, ofreciendo la comodidad de ser atendidos en el domicilio del cliente.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
+    </div>
     </div>
     <div class="main">
       <div class="img">
@@ -29,5 +50,22 @@
         <img src="./DS/ds_1.jpg" />
       </div>
     </div>
+     <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

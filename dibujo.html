@@ -22,6 +22,26 @@
         />
       </a>
       </div>
+     <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>Este proyecto consistió en el diseño de una mascota visual para una empresa ficticia. La tarea era crear una representación gráfica que no solo identificara a la empresa, sino que también comunicara sus valores y el campo en el que opera. Me sumergí en la investigación del sector y los valores de la empresa para comprender su identidad. A partir de ahí, desarrollé varios conceptos y bocetos, explorando diferentes formas, colores y elementos visuales. El objetivo era crear una mascota que fuera memorable y que resonara con el público objetivo, al tiempo que reflejara la esencia y la misión de la empresa. El resultado final fue una mascota visual que encapsulaba la personalidad y el propósito de la empresa, lista para ser utilizada como parte de su identidad visual.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
     </div>
     <div class="main">
       <div class="img">
@@ -29,5 +49,22 @@
         <img src="./AURUM CHEMICALS/A-02.jpg" />
       </div>
     </div>
+    <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

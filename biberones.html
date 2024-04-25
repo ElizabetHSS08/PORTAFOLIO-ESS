@@ -23,6 +23,26 @@
       </a>
       </div>
     </div>
+             <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>En este proyecto universitario, me embarqué en la creación de una campaña publicitaria para promocionar unos biberones. Desde la estética hasta los copys, el eslogan y el logo, me sumergí en cada detalle para desarrollar una campaña coherente y atractiva. Utilicé imágenes encontradas en internet para ilustrar mis conceptos y mensajes publicitarios. Mi objetivo era demostrar mi capacidad para crear una identidad de marca sólida y comunicar eficazmente los beneficios de los biberones en un mercado competitivo. A través de este proyecto, adquirí experiencia práctica en el diseño publicitario y la gestión de campañas, preparándome para desafíos futuros en el campo de la comunicación visual.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
     <div class="main">
       <div class="img">
         <img src="./BIBERONES/B1.jpeg" />
@@ -34,5 +54,22 @@
         <img src="./BIBERONES/B7.jpeg" />
       </div>
     </div>
+        <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

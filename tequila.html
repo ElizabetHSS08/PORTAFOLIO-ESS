@@ -23,11 +23,49 @@
       </a>
       </div>
     </div>
+         <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>Este proyecto fue realizado en el ámbito universitario como parte del curso de Edición Editorial. Nuestra tarea consistió en seleccionar un producto y desarrollar propuestas creativas en torno a él. Optamos por el tequila, una bebida emblemática de nuestra cultura mexicana. A lo largo del proceso, exploramos diversas estrategias y enfoques para destacar las cualidades únicas de este destilado.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
+    </div>
     <div class="main">
       <div class="img">
         <img src="./TEQUILA/TEQUILA 1.jpeg" />
         <img src="./TEQUILA/TEQUILA 2.jpeg" />
       </div>
     </div>
+     <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

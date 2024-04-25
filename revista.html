@@ -23,6 +23,26 @@
       </a>
       </div>
     </div>
+             <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>Este proyecto universitario surgió como parte del curso de Diseño Editorial, donde me propuse crear una revista desde cero. Desde el inicio, me sumergí en el proceso creativo, dedicando tiempo a la selección de contenido relevante y a la conceptualización del diseño. Desarrollé meticulosamente cada aspecto, desde la maquetación hasta la selección de tipografía, buscando transmitir visualmente la esencia de cada estilo de moda. El resultado final fue una revista que refleja mi compromiso con el diseño editorial y  pasión por la expresión visual.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
     <div class="main">
       <div class="img">
         <img src="./REVISTA ESS/1.1.jpg" />
@@ -43,5 +63,22 @@
         <img src="./REVISTA ESS/16.jpg" />
       </div>
     </div>
+            <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

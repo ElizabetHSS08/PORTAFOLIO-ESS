@@ -45,29 +45,29 @@ img {
   line-height: 20pt;
   color: #bb221d;
   position: left;
-  text-align: left;
-  padding-top: -20%;
-  margin-top: 3%;
-  margin-left: 5%;
+  text-align: center;
+  padding: 5px;
+  margin-left: 6%;
   margin-right: 60%;
   border-width: 0;
+  position: absolute;
+  top: 60px;
+  left: 27%;
 }
 .Info {
   font-family: SpartanSB;
-  font-size: 10pt;
+  font-size: 20pt;
   color: #bb221d;
   padding: 0px;
-  margin-left: 2%;
+  margin-left: 15%;
   margin-top: 2%;
   border-width: 0;
 }
 .x {
   font-family: SpartanSB;
-  font-size: 5pt;
+  font-size: 10pt;
   color: #bb221d;
   padding: 2px;
   border-width: 0;
-}
-::backdrop {
-  opacity: 10%;
+  margin-left: 95%;
 }

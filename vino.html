@@ -22,6 +22,26 @@
         />
       </a>
       </div>
+                   <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>Este proyecto universitario fue parte de mi curso de caligrafía, donde nos asignaron la tarea de crear el nombre de una marca de vino utilizando plumilla y tinta. La premisa era desarrollar un diseño único y distintivo que reflejara la elegancia y la artesanía asociadas con la producción de vino. Me sumergí en el arte de la caligrafía, explorando diferentes estilos de escritura y técnicas con la plumilla para encontrar la expresión perfecta para la marca. Cada trazo fue cuidadosamente ejecutado a mano, buscando capturar la esencia y la sofisticación del producto. El resultado fue un nombre de marca elaborado con destreza y atención al detalle, listo para añadir un toque de distinción a la etiqueta de una botella de vino.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
     </div>
     <div class="main">
       <div class="img">
@@ -30,5 +50,22 @@
         <img src="./VINO/VINO 3.jpeg" />
       </div>
     </div>
+       <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>

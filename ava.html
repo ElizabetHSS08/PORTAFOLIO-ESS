@@ -23,6 +23,26 @@
       </a>
       </div>
     </div>
+                 <script>
+      const dialog = document.querySelector("dialog");
+      const showButton = document.querySelector("dialog + button");
+      const closeButton = document.querySelector("dialog button");
+
+      // "Show the dialog" button opens the dialog modally
+        showButton.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        // "Close" button closes the dialog
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+    </script>
+    <dialog id="info." class="info">
+      <p>En mi curso universitario de caligrafía,realicé la creación del nombre de una marca para un restaurante oriental, utilizando exclusivamente plumilla y tinta. Este desafío me permitió fusionar la delicadeza de la caligrafía con la rica cultura de la gastronomía oriental. Sumergido en la estética y la esencia del Lejano Oriente, se exploró diversos estilos de escritura para capturar la autenticidad y el encanto de la cocina asiática. Cada trazo, meticulosamente elaborado a mano, buscaba transmitir la elegancia y la sofisticación que se esperaría al disfrutar de una experiencia culinaria en el restaurante. El resultado final fue un nombre de marca exquisitamente diseñado, lleno de carácter y listo para adornar la entrada de un destino gastronómico único.</p>
+      <button id="X" class="x">X</button>
+    </dialog>
+<button id="openDialog" class="Info">Info.</button>
     <div class="main">
       <div class="img">
         <img src="./AVA/A1.jpeg" />
@@ -31,5 +51,22 @@
         <img src="./AVA/A4.jpeg" />
       </div>
     </div>
+       <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("X");
+        var favDialog = document.getElementById("info.");
+ 
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+ 
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
   </body>
 </html>
